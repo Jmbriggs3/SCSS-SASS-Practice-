@@ -1,2 +1,2 @@
-# Scss-practice- 
-Using Sass to style the HTML document
+# SCSS-practice- 
+Using SCSS to style the HTML document
