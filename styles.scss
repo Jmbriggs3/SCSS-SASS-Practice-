@@ -25,6 +25,11 @@ $liPadding: 10px 15px;
 .container {
   width: 50 * 15 + px;
   margin: 0 auto;
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
 }
 
 article {
@@ -32,6 +37,32 @@ article {
   display: inline-block;
   float: left;
   margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-raidus: 5px;
+  margin: 10px 0;
+}
+
+.primary {
+  @extend .btn;
+  background: blue;
+}
+
+.danger {
+  @extend .btn;
+  background: red;
+}
+
+.success {
+  @extend .btn;
+  background: green;
+}
+
+.warning {
+  @extend .btn;
+  background: yellow;
 }
 
 aside {
